@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".activity.SettingsActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_settings_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Toolbar
+            android:id="@+id/tb_settings"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/colorTab"
+            android:minHeight="?attr/actionBarSize"
+            android:title="@string/settings"
+            android:titleTextColor="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:targetApi="m">
+
+        </Toolbar>
+
+        <LinearLayout
+            android:id="@+id/ll_release_reminder"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/elevation_shape"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="100">
+
+            <ImageView
+                android:id="@+id/iv_release_reminder_icon"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="15"
+                android:contentDescription="@string/release_reminder_icon"
+                android:src="@drawable/ic_new_releases_24dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="70"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_release_reminder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/release_reminder"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_release_reminder_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/release_reminder_details"
+                    android:textColor="@color/grey" />
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/sw_release_reminder"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="15"
+                android:theme="@style/SwitchTheme" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_daily_reminder"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/elevation_shape"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="100">
+
+            <ImageView
+                android:id="@+id/iv_daily_reminder_icon"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="15"
+                android:contentDescription="@string/daily_reminder_icon"
+                android:src="@drawable/ic_daily_24dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="70"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_daily_reminder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/daily_reminder"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_daily_reminder_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/daily_reminder_details"
+                    android:textColor="@color/grey" />
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/sw_daily_reminder"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="15"
+                android:theme="@style/SwitchTheme" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_change_language"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/elevation_shape"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="100">
+
+            <ImageView
+                android:id="@+id/iv_change_language"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="15"
+                android:contentDescription="@string/change_language_icon"
+                android:src="@drawable/ic_language_24dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="70"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_change_language"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/change_language"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_change_language_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/english"
+                    android:textColor="@color/grey" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_next"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="15"
+                android:contentDescription="@string/next_icon"
+                android:src="@drawable/ic_navigate_next_24dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

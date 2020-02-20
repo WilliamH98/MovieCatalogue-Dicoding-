@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ConsumerAppsMovies</string>
+    <string name="title">Judul</string>
+    <string name="description">Deskripsi</string>
+    <string name="submit">Submit</string>
+    <string name="delete">Hapus</string>
+    <string name="date">Date</string>
+    <string name="create_new">Buat Baru</string>
+    <string name="movie_poster">Movie Poster</string>
+    <string name="score">Score</string>
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/elevation_shape">
+
+    <LinearLayout
+        android:id="@+id/ll_list"
+        android:padding="15dp"
+        android:weightSum="100"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_shows_poster"
+            android:layout_weight="25"
+            android:layout_width="0dp"
+            android:layout_height="125dp"
+            android:contentDescription="@string/movie_poster"/>
+
+        <LinearLayout
+            android:id="@+id/ll_description"
+            android:layout_marginStart="12dp"
+            android:orientation="vertical"
+            android:layout_weight="75"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_shows_title"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/movie_title_sample"/>
+
+            <LinearLayout
+                android:id="@+id/ll_shows_year"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="40"
+                    android:id="@+id/tv_shows_year_header"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/grey"
+                    android:text="@string/release_date"/>
+
+                <TextView
+                    android:id="@+id/tv_shows_year"
+                    android:layout_weight="60"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/grey"
+                    android:text="@string/years_sample"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_description_3"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_shows_IMDB"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="@string/score"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_marginStart="7dp"
+                    android:id="@+id/iv_star_rating"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/star_rating"
+                    android:contentDescription="@string/star_image"/>
+
+                <TextView
+                    android:id="@+id/tv_shows_score"
+                    android:layout_marginStart="2dp"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/score_sample"/>
+
+                <TextView
+                    android:id="@+id/tv_shows_vote"
+                    android:layout_marginStart="4dp"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/votes_sample"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
